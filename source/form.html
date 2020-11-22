@@ -25,17 +25,78 @@
 
       </nav>
     </header>
-    <main>
+    <main class="page-main page-testimonials">
+      <h1 class="visually-hidden">Форма отзыва города Седона</h1>
       <section class="welcome">
-        <h1 class="vissually-hiden">City of Sedona</h1>
-        <img src="" alt="Welcome to the gorgeousю Sedona. Because the Grand Canyon sucks">
+        <h2 class="vissually-hiden">SEDONA</h2>
+        <img src="https://via.placeholder.com/229x39" alt="SEDONA">
       </section>
-      <section class="advantages">
+      <section class="feedback">
+        <h2 class="testimonial__title">Оставьте свой отзыв</h2>
+        <p class="testimonial__subtitle">
+          Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        </p>
 
-      </section>
-      <section class="search">
+        <form class="testimonial__form form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
+          <fieldset class="fieldset-name">
+            <legend class="fieldset-name__legend legend">Представьтесь:</legend>
+            <label class="fieldset-name__label fieldset-name__label--first-name" for="first-name">Имя*:</label>
+            <input class="fieldset-name__input fieldset-name__input--first-name" id="first-name" type="text" name="user-first-name" placeholder="Петр" required>
+            <label class="fieldset-name__label fieldset-name__label--last-name" for="last-name">Фамилия*:</label>
+            <input class="fieldset-name__input fieldset-name__input--last-name" id="last-name" type="text" name="user-last-name" placeholder="Иванов" required>
+            <label class="fieldset-name__label fieldset-name__label--middle-name" for="middle-name">Отчество:</label>
+            <input class="fieldset-name__input fieldset-name__input--middle-name" id="middle-name" type="text" name="user-middle-name" placeholder="Александрович">
+          </fieldset>
 
+          <fieldset class="fieldset-contact">
+            <legend class="fieldset-contact__legend legend">Контактная информация:</legend>
+            <label class="fieldset-contact__label fieldset-contact__label--phone" for="phone">Контактный телефон*:</label>
+            <input class="fieldset-contact__input fieldset-contact__input--phone" id="phone" type="number" name="user-phone" placeholder="Введите телефон" required>
+            <label class="fieldset-contact__label fieldset-contact__label--email" for="email">Электронная почта*:</label>
+            <input class="fieldset-contact__input fieldset-contact__input--email" id="email" type="text" name="user-email" placeholder="Введите e-mail" required>
+          </fieldset>
+
+          <fieldset class="fieldset-impression">
+            <legend class="fieldset-impression__legend legend">Ваше общее впечатление:</legend>
+
+            <input class="fieldset-impression__input fieldset-impression__input--positive" id="positive" name="user-impression-positive" value="positive-impression" type="radio">
+            <label class="fieldset-impression__label fieldset-impressions__label--positive" for="positive">Скорее положительное</label>
+
+            <input class="fieldset-impression__input fieldset-impression__input--negative" id="negative" name="user-impression-negative" value="negative-impression" type="radio">
+            <label class="fieldset-impression__label fieldset-impressions__label--negative" for="negative">Скорее отрицательное</label>
+
+            <input class="fieldset-impressions__input fieldset-impression__input--vague" id="vague" name="user-impression-vague" value="vague-impression" type="radio">
+            <label class="fieldset-impressions__label fieldset-impressions__label--vague" for="vague">Затрудняюсь ответить</label>
+
+          </fieldset>
+
+          <fieldset class="fieldset-attraction">
+            <legend class="fieldset-attraction__legend legend">Посещенные достопримечательности:</legend>
+
+            <input class="fieldset-attraction__input" id="devils-bridge" name="devils-bridge-place" value="Devils-Bridge" type="checkbox">
+            <label class="fieldset-attraction__label" for="devils-bridge">Мост Дьявола</label>
+
+            <input class="fieldset-attraction__input" id="bell-rock" name="bell-rock-place" value="Bell-rock" type="checkbox">
+            <label class="fieldset-attraction__label" for="bell-rock">Гора-Колокол</label>
+
+            <input class="fieldset-attraction__input" id="slide-rock" name="slide-rock-place" value="Slide-rock" type="checkbox">
+            <label class="fieldset-attraction__label" for="slide-rock">Слайд-парк</label>
+
+            <input class="fieldset-attraction__input" id="red-rocks" name="red-rocks-place" value="Red-rocks" type="checkbox">
+            <label class="fieldset-attraction__label" for="red-rocks">Красные скалы</label>
+
+          </fieldset>
+
+          <fieldset class="fieldset-comment">
+            <legend class="fieldset-comment__legend legend">Опишите свои эмоции:</legend>
+            <textarea class="fieldset-comment__text" id="comment" cols="30" rows="6" name="user-comment" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+
+          <button class="form__button button" type="submit">Отправить отзыв</button>
+          <small class="form__legend">* — обязательные поля</small>
+        </form>
       </section>
+
     </main>
     <footer class="page-footer">
       <section></section>
