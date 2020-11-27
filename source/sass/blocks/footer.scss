@@ -9,6 +9,8 @@
 }
 
 .social__list {
+  list-style: none;
+  padding: 0;
   display: flex;
   margin: 34px 0 40px;
 }
@@ -20,5 +22,7 @@
 
 .copyright__title {
   text-transform: uppercase;
+  margin: 0;
+  font-size: 14px;
   line-height: 26px;
 }

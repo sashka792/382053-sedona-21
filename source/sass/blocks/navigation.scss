@@ -7,6 +7,12 @@
   background: transparent;
 }
 
+.site-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .site-list__link {
   font-weight: 700;
   line-height: 40px;

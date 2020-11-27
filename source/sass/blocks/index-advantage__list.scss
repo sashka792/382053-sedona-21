@@ -1,4 +1,7 @@
 .advantage__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   background-color: $body-color;
 }
 
@@ -20,9 +23,15 @@
   }
 }
 
+.advantage__item-title {
+  font-size: 18px;
+  margin: 0;
+}
+
 .advantage__item-number,
 .advantage__item-description {
   color: $dark-grey;
+  margin: 0;
 }
 
 .advantage__item-description {
