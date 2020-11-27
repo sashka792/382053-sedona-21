@@ -1,1 +1,14 @@
-// Начните писать стили здесь
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "../css/normalize.css";
+
+// Blocks
+@import "blocks/header.scss";
+@import "blocks/footer.scss";
+@import "blocks/navigation.scss";
+@import "blocks/index-welcome.scss";
+@import "blocks/index-advantage.scss";
+@import "blocks/index-infrastructure.scss";
+@import "blocks/index-advantage__list.scss";
+@import "blocks/index-search.scss";

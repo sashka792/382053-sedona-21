@@ -4,24 +4,30 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
 
   <header class="page-header">
     <a class="page-header__logo">
-      <img src="https://via.placeholder.com/102x84" alt="Логотип города Седона">
+      <img src="img/logotype-mobile.svg" alt="Логотип города Седона">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toogle" type="button">
-        <span class="visually-hiden">Открыть меню</span>
+        <span class="visually-hidden">Открыть меню</span>
+        <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
+          <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
+          <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
+        </svg>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a>Главная</a></li>
-          <li class="site-list__item"><a href="">Фото и видео</a></li>
-          <li class="site-list__item"><a href="">Форма Отзыва</a></li>
-          <li class="site-list__item"><a href="">Html Academy</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Главная</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Фото и видео</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Форма Отзыва</a></li>
+          <li class="site-list__item"><a class="site-list__link" href="#">Html Academy</a></li>
         </ul>
       </div>
     </nav>
@@ -30,14 +36,13 @@
   <main class="page-main">
     <h1 class="visually-hidden">Главная страница города Седона</h1>
     <section class="welcome">
-      <h2 class="vissually-hiden">Приветствие города Седона</h2>
-      <img src="https://via.placeholder.com/282x214"
-        alt="Welcome to the gorgeousю Sedona. Because the Grand Canyon sucks">
+      <h2 class="visually-hidden">Приветствие города Седона</h2>
+      <img src="img/welcome-text.svg" alt="Welcome to the gorgeousю Sedona. Because the Grand Canyon sucks">
     </section>
 
     <section class="advantages">
-      <h2 class="vissually-hiden">Преимущества города</h2>
-      <h3 class="advantages__title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h3>
+      <h2 class="visually-hidden">Преимущества города</h2>
+      <h3 class="advantages__title">СЕДОНА — небольшой городок в Аризоне, заслуживающий большего!</h3>
       <p class="advantages__description">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <article class="advantage">
         <div class="advantage__text-wrapper advantage__text-wrapper--decoration">
@@ -45,11 +50,11 @@
           <p class="advantage__number">— №1 —</p>
           <p class="advantages__description">Седона &mdash; не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
-        <img src="https://via.placeholder.com/320x260" alt="Фотография города Седона">
+        <img class="advantage__city-photo" src="img/photo-sedona.jpg" alt="Фотография города Седона">
       </article>
 
       <article class="infrastructure">
-        <h2 class="vissually-hiden">Инфраструктура города Седона</h2>
+        <h2 class="visually-hidden">Инфраструктура города Седона</h2>
         <ul class="infrastructure__list">
           <li class="infrastructure__item">
             <h3 class="infrastructure__item-title infrastructure__item-title--motel">Жильё</h3>
@@ -67,18 +72,18 @@
       </article>
 
       <article class="advantage">
-        <div class="advantage__text-wrapper">
+        <div class="advantage__text-wrapper advantage__text-wrapper--decoration">
           <h3 class="advantage__title">Там есть Мост Дьявола</h3>
           <p class="advantage__number">— №2 —</p>
           <p class="advantages__description">Да, по нему можно пройти! Если конечно вы осмелитесь, конечно</p>
         </div>
-        <img src="https://via.placeholder.com/320x260" alt="Фотография Мост Дьявола">
+        <img class="advantage__bridge-photo" src="img/photo-bridge.jpg" alt="Фотография Мост Дьявола">
       </article>
 
       <article class="advantage">
-        <h2 class="vissually-hiden">Другие преимущества города</h2>
+        <h2 class="visually-hidden">Другие преимущества города</h2>
         <ul class="advantage__list">
-          <li class="advantage__item">
+          <li class="advantage-list__item">
             <h3 class="advantage__item-title">Небольшая площадь</h3>
             <p class="advantage__item-number">— №3 —</p>
             <p class="advantage__item-description">Все достопримечательности находятся очень близко</p>
@@ -98,22 +103,25 @@
     </section>
 
     <section class="search">
-      <h2 class="vissually-hiden">Поиск гостиницы в городе</h2>
-      <h3 class="search__headline">Заинтересовались?</h3>
-      <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-        предложения гостиниц в седоне
-      </p>
-      <button class="button search__button" type="button">Найти гостиницу</button>
+      <h2 class="visually-hidden">Поиск гостиницы в городе</h2>
+      <div class="search__wrapper">
+        <h3 class="search__headline">Заинтересовались?</h3>
+        <p class="search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие
+          предложения гостиниц в седоне
+        </p>
+        <button class="button search__button" type="button">Найти гостиницу</button>
+      </div>
+      <img src="img/map-mobile.jpg" width="320" height="350" alt="Карта региона Седоны">
     </section>
   </main>
 
   <footer class="page-footer">
     <section class="page-footer__city-tag city-tag">
-      <h2 class="vissually-hiden">Тег города</h2>
+      <h2 class="visually-hidden">Тег города</h2>
       <b class="city-tag__text">#VISITSEDONA</b>
     </section>
     <section class="page-footer__social social">
-      <h2 class="vissually-hiden">Социальные сети</h2>
+      <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--twitter" href="#" aria-label="Твиттер">
@@ -146,7 +154,7 @@
       </ul>
     </section>
     <section class="page-footer__copyright copyright">
-      <h2 class="vissually-hiden">Разработчик</h2>
+      <h2 class="visually-hidden">Разработчик</h2>
       <div class="copyright__wrapper">
         <p class="copyright__title">Разработано</p>
         <a class="copyright__link" href="#" aria-label="Ссылка HTML Academy">
@@ -161,4 +169,5 @@
     </section>
   </footer>
 </body>
+
 </html>

@@ -1,0 +1,19 @@
+.search {
+  background: $white;
+  text-transform: uppercase;
+}
+
+.search__headline {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  padding: 33px 0 30px;
+}
+
+.search__button {
+  margin-bottom: 49px;
+}
+
+.search__map {
+  background-color: $map-background;
+}
