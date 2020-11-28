@@ -1,0 +1,39 @@
+.advantage__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: $body-color;
+}
+
+.advantage-list__item {
+  padding: 25px 0 24px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 1px;
+    margin-top: 24px;
+    background-color: $list-decoration;
+  }
+
+  &:nth-last-child(1)::after {
+    display: none;
+  }
+}
+
+.advantage__item-title {
+  font-size: 18px;
+  margin: 0;
+}
+
+.advantage__item-number,
+.advantage__item-description {
+  color: $dark-grey;
+  margin: 0;
+}
+
+.advantage__item-description {
+  line-height: 15px;
+}

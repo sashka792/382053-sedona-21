@@ -1,0 +1,28 @@
+.page-footer {
+  background-color: $white;
+  padding: 39px 0 26px;
+}
+
+.city-tag__text {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.social__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 34px 0 40px;
+}
+
+.social__link {
+  background-color: $accent;
+  padding: 16px 14px;
+}
+
+.copyright__title {
+  text-transform: uppercase;
+  margin: 0;
+  font-size: 14px;
+  line-height: 26px;
+}

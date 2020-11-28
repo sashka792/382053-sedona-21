@@ -1,0 +1,36 @@
+.advantages {
+  text-transform: uppercase;
+  background-color: $white;
+  font-size: 14px;
+}
+
+.advantages__title {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding: 32px 0 40px;
+}
+
+.advantage__title {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.advantage__number {
+  line-height: 21px;
+}
+
+.advantages__description {
+  line-height: 21px;
+}
+
+.advantage__text-wrapper--decoration {
+  background-color: $accent;
+  color: $white;
+  padding: 34px 0 39px;
+}
+
+.advantage__city-photo,
+.advantage__bridge-photo {
+  background-color: $advantage-image-background;
+}

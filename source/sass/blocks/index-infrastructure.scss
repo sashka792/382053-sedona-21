@@ -1,0 +1,32 @@
+.infrastructure__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.infrastructure__item {
+  margin: 26px 0;
+}
+
+.infrastructure__item-title {
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.infrastructure__item-title--motel::before {
+  height: 37px;
+  display: block;
+  content: url("../../img/icon-house.svg");
+}
+
+.infrastructure__item-title--food::before {
+  height: 38px;
+  display: block;
+  content: url("../../img/icon-burger.svg");
+}
+
+.infrastructure__item-title--gift::before {
+  height: 35px;
+  display: block;
+  content: url("../../img/icon-gift.svg");
+}
