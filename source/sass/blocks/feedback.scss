@@ -1,0 +1,83 @@
+.page-feedback {
+  background-color: $white;
+}
+
+.feedback {
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.feedback__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 36px 0 40px;
+  padding: 0;
+}
+
+.feedback__subtitle {
+  font-size: 14px;
+  line-height: 24px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 320px;
+    height: 1px;
+    top: 35px;
+    left: 0;
+    background-color: $input-background-hover;
+  }
+}
+
+.feedback__form {
+  margin-top: 50px;
+
+  .legend {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    // text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    text-transform: uppercase;
+  }
+}
+
+.fieldset-name,
+.fieldset-contact,
+.fieldset-impression,
+.fieldset-attraction,
+.fieldset-comment {
+  outline: none;
+  border: none;
+}
+
+.fieldset-name__label,
+.fieldset-contact__label {
+  text-transform: uppercase;
+  color: $dark-grey;
+}
+
+.fieldset-name__input::placeholder,
+.fieldset-contact__input::placeholder {
+  font-size: 18px;
+  font-weight: 700;
+  color: $black;
+}
+
+.fieldset-impression__label,
+.fieldset-attraction__label {
+  font-size: 18px;
+  font-weight: 700;
+  color: $black;
+}
+
+.fieldset-comment__text::placeholder {
+  font-size: 18px;
+  font-weight: 700;
+  color: $black;
+}

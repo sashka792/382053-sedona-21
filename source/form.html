@@ -3,40 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
     <header class="page-header">
       <a class="page-header__logo" href="#">
-        <img src="https://via.placeholder.com/102x84" alt="Логотип города Седона">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" alt="Логотип города Седона">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toogle" type="button">
-          <span class="visually-hiden">Открыть меню</span>
+          <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="">Главная</a></li>
-            <li class="site-list__item"><a href="">Фото и видео</a></li>
-            <li class="site-list__item"><a href="">Форма Отзыва</a></li>
-            <li class="site-list__item"><a href="">Html Academy</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="catalog.html">Фото и видео</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="#">Форма Отзыва</a></li>
+            <li class="site-list__item"><a class="site-list__link" href="">Html Academy</a></li>
           </ul>
         </div>
-
       </nav>
     </header>
-    <main class="page-main page-testimonials">
+
+    <main class="page-main page-feedback">
       <section class="welcome">
         <h1 class="visually-hidden">Форма отзыва города Седона</h1>
-        <img src="https://via.placeholder.com/229x39" alt="SEDONA">
+        <img src="img/inner-welcome-text.svg" width="229" height="39" alt="SEDONA">
       </section>
       <section class="feedback">
-        <h2 class="testimonial__title">Оставьте свой отзыв</h2>
-        <p class="testimonial__subtitle">
+        <h2 class="feedback__title">Оставьте свой отзыв</h2>
+        <p class="feedback__subtitle">
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
 
-        <form class="testimonial__form form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
+        <form class="feedback__form form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
           <fieldset class="form__fieldset-name fieldset-name">
             <legend class="fieldset-name__legend legend">Представьтесь:</legend>
             <label class="fieldset-name__label fieldset-name__label--first-name" for="first-name">Имя*:</label>
@@ -59,13 +60,13 @@
             <legend class="fieldset-impression__legend legend">Ваше общее впечатление:</legend>
 
             <input class="fieldset-impression__input fieldset-impression__input--positive" id="positive" name="user-impression-positive" value="positive-impression" type="radio">
-            <label class="fieldset-impression__label fieldset-impressions__label--positive" for="positive">Скорее положительное</label>
+            <label class="fieldset-impression__label fieldset-impression__label--positive" for="positive">Скорее положительное</label>
 
             <input class="fieldset-impression__input fieldset-impression__input--negative" id="negative" name="user-impression-negative" value="negative-impression" type="radio">
-            <label class="fieldset-impression__label fieldset-impressions__label--negative" for="negative">Скорее отрицательное</label>
+            <label class="fieldset-impression__label fieldset-impression__label--negative" for="negative">Скорее отрицательное</label>
 
-            <input class="fieldset-impressions__input fieldset-impression__input--vague" id="vague" name="user-impression-vague" value="vague-impression" type="radio">
-            <label class="fieldset-impressions__label fieldset-impressions__label--vague" for="vague">Затрудняюсь ответить</label>
+            <input class="fieldset-impression__input fieldset-impression__input--vague" id="vague" name="user-impression-vague" value="vague-impression" type="radio">
+            <label class="fieldset-impression__label fieldset-impression__label--vague" for="vague">Затрудняюсь ответить</label>
 
           </fieldset>
 
@@ -99,11 +100,11 @@
     </main>
     <footer class="page-footer">
       <section class="page-footer__city-tag city-tag">
-        <h2 class="vissually-hiden">Тег города</h2>
+        <h2 class="visually-hidden">Тег города</h2>
         <b class="city-tag__text">#VISITSEDONA</b>
       </section>
       <section class="page-footer__social social">
-        <h2 class="vissually-hiden">Социальные сети</h2>
+        <h2 class="visually-hidden">Социальные сети</h2>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--twitter" href="#" aria-label="Твиттер">
@@ -136,7 +137,7 @@
         </ul>
       </section>
       <section class="page-footer__copyright copyright">
-        <h2 class="vissually-hiden">Разработчик</h2>
+        <h2 class="visually-hidden">Разработчик</h2>
         <div class="copyright__wrapper">
           <p class="copyright__title">Разработано</p>
           <a class="copyright__link" href="#" aria-label="Ссылка HTML Academy">
