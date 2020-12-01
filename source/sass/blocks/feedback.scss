@@ -1,13 +1,10 @@
-.page-feedback {
-  background-color: $white;
-}
-
 .feedback {
   font-size: 14px;
   line-height: 26px;
 }
 
 .feedback__title {
+  text-transform: uppercase;
   font-size: 18px;
   font-weight: 700;
   margin: 36px 0 40px;
@@ -15,6 +12,7 @@
 }
 
 .feedback__subtitle {
+  text-transform: uppercase;
   font-size: 14px;
   line-height: 24px;
   position: relative;
@@ -76,8 +74,16 @@
   color: $black;
 }
 
+.fieldset-comment__text {
+  resize: none;
+}
+
 .fieldset-comment__text::placeholder {
   font-size: 18px;
   font-weight: 700;
   color: $black;
+}
+
+.form__legend {
+  color: $dark-grey;
 }
