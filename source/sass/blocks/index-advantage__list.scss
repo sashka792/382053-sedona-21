@@ -1,8 +1,18 @@
+.advantage--aditional {
+  display: inherit;
+}
+
 .advantage__list {
   list-style: none;
   margin: 0;
   padding: 0;
   background-color: $body-color;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .advantage-list__item {
@@ -15,7 +25,12 @@
     width: 280px;
     height: 1px;
     margin-top: 24px;
+    left: 10px;
     background-color: $list-decoration;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   &:nth-last-child(1)::after {
