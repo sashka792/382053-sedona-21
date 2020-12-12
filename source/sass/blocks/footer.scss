@@ -1,6 +1,9 @@
 .page-footer {
   background-color: $white;
   padding: 39px 0 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .city-tag__text {
@@ -15,9 +18,21 @@
   margin: 34px 0 40px;
 }
 
+.social__item {
+  margin-right: 6px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .social__link {
   background-color: $accent;
   padding: 16px 14px;
+}
+
+.copyright__wrapper {
+  display: flex;
 }
 
 .copyright__title {
