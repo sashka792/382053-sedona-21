@@ -26,10 +26,9 @@
   text-align: center;
   border-bottom: 1px solid $input-background-hover;
 
-    @media (min-width: $tablet-width) {
-      border-bottom: none;
-    }
-
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .feedback__form {
