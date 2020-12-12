@@ -4,6 +4,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 60px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .city-tag__text {
