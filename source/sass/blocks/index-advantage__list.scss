@@ -15,7 +15,7 @@
   }
 }
 
-.advantage-list__item {
+.advantage-list__item-wrap {
   padding: 25px 0 24px;
   position: relative;
 
@@ -38,17 +38,16 @@
   }
 }
 
-.advantage__item-title {
-  font-size: 18px;
-  margin: 0;
-}
-
-.advantage__item-number,
-.advantage__item-description {
+.advantage__item {
   color: $dark-grey;
   margin: 0;
-}
 
-.advantage__item-description {
-  line-height: 15px;
+  &--title {
+    font-size: 18px;
+    color: $black;
+  }
+
+  &--description {
+    line-height: 15px;
+  }
 }

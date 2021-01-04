@@ -34,13 +34,16 @@
       <img src="img/inner-welcome-text.svg" alt="SEDONA">
     </section>
     <section class="galery">
-      <h2 class="galery__title">Фото и видео</h2>
+      <h2 class="page-gallery__title galery__title">Фото и видео</h2>
       <p class="galery__subtitle">
         Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
       </p>
       <section class="galery__photos">
         <article class="galery__item">
-          <img class="galery__item-photo" src="img/road.jpg" alt="Фотография Неродные просторы">
+          <div class="galery__item-image">
+            <img class="galery__item-photo" src="img/road.jpg" alt="Фотография Неродные просторы">
+          </div>
+
           <div class="galery__description">
             <p class="galery__heading">Неродные просторы</p>
             <p class="galery__author">Автор фото: Борис</p>
@@ -56,7 +59,9 @@
           </div>
         </article>
         <article class="galery__item">
-          <img class="galery__item-photo" src="img/flora.jpg" alt="Фотография Местная растительность">
+          <div class="galery__item-image">
+            <img class="galery__item-photo" src="img/flora.jpg" alt="Фотография Местная растительность">
+          </div>
           <div class="galery__description">
             <p class="galery__heading">Местная растительность</p>
             <p class="galery__author">Автор фото: Сергей</p>
@@ -72,7 +77,9 @@
           </div>
         </article>
         <article class="galery__item">
-          <img class="galery__item-photo" src="img/forest.jpg" alt="Фотография Дорога на север">
+          <div class="galery__item-image">
+            <img class="galery__item-photo" src="img/forest.jpg" alt="Фотография Дорога на север">
+          </div>
           <div class="galery__description">
             <p class="galery__heading">Дорога на север</p>
             <p class="galery__author">Автор фото: Петр</p>
@@ -88,7 +95,9 @@
           </div>
         </article>
         <article class="galery__item">
-          <img class="galery__item-photo" src="img/devils-bridge.jpg" alt="Фотография Мост дьявола">
+          <div class="galery__item-image">
+            <img class="galery__item-photo" src="img/devils-bridge.jpg" alt="Фотография Мост дьявола">
+          </div>
           <div class="galery__description">
             <p class="galery__heading">Мост дьявола</p>
             <p class="galery__author">Автор фото: Антон</p>
@@ -105,12 +114,12 @@
         </article>
       </section>
       <section class="galery__video">
-        <h2 class="galery__video-title">Фото и видео</h2>
+        <h2 class="page-gallery__title galery__video-title">Все еще сомневаетесь?</h2>
         <p class="galery__video-subtitle">
           Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
         <div class="video-wrapper video">
-          <video class="video__content" poster="img/video.jpg" width="320" height="201"></video>
+          <video class="video__content" poster="img/video.jpg" width="100%" height="201"></video>
           <div class="video__controls">
             <div class="video__progress-bar">
               <span class="video__progress-button"></span>

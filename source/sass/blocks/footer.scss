@@ -1,6 +1,6 @@
 .page-footer {
   background-color: $white;
-  padding: 39px 0 26px;
+  padding: 0 0 26px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,6 +15,7 @@
 .city-tag__text {
   font-size: 21px;
   line-height: 26px;
+  padding: 29px 0 33px;
 }
 
 .social__list {
